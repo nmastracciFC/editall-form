@@ -28,13 +28,13 @@ function single_edit($tbl, $col, $id) {
 				echo "<label>{$fieldName}</label><br>";
 				if($fieldType !="252") {
 					//if field type is not equal to 252
-					echo "<input type=\"text\" name=\"'{$fieldName}'\" value=\"'{$getResult[$i]}'\"><br> ";
+					echo "<input type=\"text\" name=\"{$fieldName}\" value=\"{$getResult[$i]}\"><br> ";
 				} else {
-					echo "<textarea name=\"'{$fieldName}'\">'{$getResult[$i]}'</textarea><br> ";
+					echo "<textarea name=\"{$fieldName}\">{$getResult[$i]}</textarea><br> ";
 				}
 			}
 	}
-	echo "<input type=\"submit\"  value=\"Save Content\"><br> ";
+	echo "<input type=\"submit\" name=\"submit\"  value=\"Save Content\"><br> ";
 	echo "</form>";
 }
 
