@@ -6,4 +6,5 @@
 	require_once('user.php');
 	require_once('addmovie.php');
 	require_once('single_edit_form.php');
+	require_once('val.php');
 ?>
